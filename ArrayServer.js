@@ -14,6 +14,10 @@ class ArrayServer extends httpServer {
     .then((data)=>{res.end(data)})
     .catch((error)=>{res.end("errorrrr")})
   }
+//   callBackReq(req,res){
+// const infoStream=fs.createReadStream('./ArrayNames.json')
+// infoStream.pipe(res)
+//   }
 }
 module.exports = new ArrayServer();
 
